@@ -9,3 +9,14 @@
     Haochen Ren |
     Songwei Fan</b>
 </p>
+
+# 1. Introduction
+
+# 2. Platform and Device Requirements
+
+
+# 3. Compile Instruction
+
+# 4. How to play
+
+# 5. Technical Support
