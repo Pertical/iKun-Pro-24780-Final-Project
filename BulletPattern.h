@@ -27,5 +27,6 @@ public:
 	void Initialize(int num, double radius, double velocity, int frequency, int dType, time_t time1);
 	void DrawPattern(int patternType);
 	void Update(int patternType);
+	int ReturnPatternNum();
 };
 

@@ -128,8 +128,6 @@ void BulletPattern::Update(int patternType) {
 							bullet[i][j].Update1();
 						}
 					}
-
-					//moves bullets and draws them
 				}
 			}
 		}
@@ -141,4 +139,10 @@ void BulletPattern::Update(int patternType) {
 			}
 		}
 	}
+
+}
+int BulletPattern::ReturnPatternNum() {
+	int x = patternNum;
+
+	return x;
 }
