@@ -17,6 +17,13 @@
 		8375CC312936DD23008F57A5 /* fssimplewindowobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 8375CC2F2936DD23008F57A5 /* fssimplewindowobjc.m */; };
 		8375CC352936DD36008F57A5 /* yssimplesound_macosx_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = 8375CC332936DD36008F57A5 /* yssimplesound_macosx_objc.m */; };
 		8375CC362936DD36008F57A5 /* yssimplesound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8375CC342936DD36008F57A5 /* yssimplesound.cpp */; };
+		8398096F2936E1E3009920EC /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 839809662936E1E3009920EC /* Player.cpp */; };
+		839809702936E1E3009920EC /* Bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 839809682936E1E3009920EC /* Bullet.cpp */; };
+		839809712936E1E3009920EC /* BulletPattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 839809692936E1E3009920EC /* BulletPattern.cpp */; };
+		839809722936E1E3009920EC /* enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8398096A2936E1E3009920EC /* enemy.cpp */; };
+		839809782936E24D009920EC /* ysglfontdata.c in Sources */ = {isa = PBXBuildFile; fileRef = 839809762936E24D009920EC /* ysglfontdata.c */; };
+		839809812936E5B7009920EC /* yspng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8398097F2936E5B7009920EC /* yspng.cpp */; };
+		839809832936F0D3009920EC /* ji.png in Resources */ = {isa = PBXBuildFile; fileRef = 839809822936F0D3009920EC /* ji.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +61,19 @@
 		8375CC322936DD36008F57A5 /* yssimplesound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yssimplesound.h; sourceTree = "<group>"; };
 		8375CC332936DD36008F57A5 /* yssimplesound_macosx_objc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yssimplesound_macosx_objc.m; sourceTree = "<group>"; };
 		8375CC342936DD36008F57A5 /* yssimplesound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = yssimplesound.cpp; sourceTree = "<group>"; };
+		839809642936E1E3009920EC /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = ../../Player.h; sourceTree = "<group>"; };
+		839809662936E1E3009920EC /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Player.cpp; path = ../../Player.cpp; sourceTree = "<group>"; };
+		839809672936E1E3009920EC /* BulletPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BulletPattern.h; path = ../../BulletPattern.h; sourceTree = "<group>"; };
+		839809682936E1E3009920EC /* Bullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Bullet.cpp; path = ../../Bullet.cpp; sourceTree = "<group>"; };
+		839809692936E1E3009920EC /* BulletPattern.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BulletPattern.cpp; path = ../../BulletPattern.cpp; sourceTree = "<group>"; };
+		8398096A2936E1E3009920EC /* enemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = enemy.cpp; path = ../../enemy.cpp; sourceTree = "<group>"; };
+		8398096B2936E1E3009920EC /* enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = enemy.h; path = ../../enemy.h; sourceTree = "<group>"; };
+		8398096D2936E1E3009920EC /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bullet.h; path = ../../Bullet.h; sourceTree = "<group>"; };
+		839809762936E24D009920EC /* ysglfontdata.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ysglfontdata.c; sourceTree = "<group>"; };
+		839809772936E24D009920EC /* ysglfontdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ysglfontdata.h; sourceTree = "<group>"; };
+		8398097F2936E5B7009920EC /* yspng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = yspng.cpp; path = "../../../Lecture Notes/Box File/yspng/yspng.cpp"; sourceTree = "<group>"; };
+		839809802936E5B7009920EC /* yspng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = yspng.h; path = "../../../Lecture Notes/Box File/yspng/yspng.h"; sourceTree = "<group>"; };
+		839809822936F0D3009920EC /* ji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ji.png; path = ../../ji.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +124,19 @@
 		8375CBFD293678AE008F57A5 /* Final Project */ = {
 			isa = PBXGroup;
 			children = (
+				839809822936F0D3009920EC /* ji.png */,
+				8398097F2936E5B7009920EC /* yspng.cpp */,
+				839809802936E5B7009920EC /* yspng.h */,
+				839809762936E24D009920EC /* ysglfontdata.c */,
+				839809772936E24D009920EC /* ysglfontdata.h */,
+				839809682936E1E3009920EC /* Bullet.cpp */,
+				8398096D2936E1E3009920EC /* Bullet.h */,
+				839809692936E1E3009920EC /* BulletPattern.cpp */,
+				839809672936E1E3009920EC /* BulletPattern.h */,
+				8398096A2936E1E3009920EC /* enemy.cpp */,
+				8398096B2936E1E3009920EC /* enemy.h */,
+				839809662936E1E3009920EC /* Player.cpp */,
+				839809642936E1E3009920EC /* Player.h */,
 				8375CC332936DD36008F57A5 /* yssimplesound_macosx_objc.m */,
 				8375CC342936DD36008F57A5 /* yssimplesound.cpp */,
 				8375CC322936DD36008F57A5 /* yssimplesound.h */,
@@ -241,6 +274,7 @@
 			files = (
 				8375CC02293678AF008F57A5 /* Assets.xcassets in Resources */,
 				8375CC05293678AF008F57A5 /* MainMenu.xib in Resources */,
+				839809832936F0D3009920EC /* ji.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,10 +299,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839809722936E1E3009920EC /* enemy.cpp in Sources */,
 				8375CC352936DD36008F57A5 /* yssimplesound_macosx_objc.m in Sources */,
+				8398096F2936E1E3009920EC /* Player.cpp in Sources */,
+				839809702936E1E3009920EC /* Bullet.cpp in Sources */,
+				839809812936E5B7009920EC /* yspng.cpp in Sources */,
 				8375CC312936DD23008F57A5 /* fssimplewindowobjc.m in Sources */,
+				839809782936E24D009920EC /* ysglfontdata.c in Sources */,
 				8375CC302936DD23008F57A5 /* fssimplewindowcpp.cpp in Sources */,
 				8375CC2C293678E3008F57A5 /* Final Project.cpp in Sources */,
+				839809712936E1E3009920EC /* BulletPattern.cpp in Sources */,
 				8375CC362936DD36008F57A5 /* yssimplesound.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

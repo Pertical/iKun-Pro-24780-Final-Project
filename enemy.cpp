@@ -3,6 +3,10 @@
 #include <iostream>
 #include "fssimplewindow.h"
 #include "enemy.h"
+#include <math.h>
+
+
+#define GL_SILENCE_DEPRECATION
 
 void Enemy::Initialize_level1(void)
 {
@@ -356,123 +360,3 @@ void Enemy::Draw_level3(void)
 
 }
 
-
-int main(void)
-{
-	int level;
-	std::cout << "Enter a level(1/2/3): ";
-	std::cin >> level;
-
-	const int numEnemy = 1;
-	int x = 200, y = 200;
-	Enemy enemy[numEnemy];
-
-	for (auto& e : enemy)
-	{
-		if (level == 1)
-		{
-			e.Initialize_level1();
-		}
-		if (level == 2)
-		{
-			e.Initialize_level2();
-		}
-		if (level == 3)
-		{
-			e.Initialize_level3();
-		}
-		
-	}
-
-	FsOpenWindow(0, 0, 800, 600, 1);
-	for (;;)
-	{
-		FsPollDevice();
-		auto key = FsInkey();
-		if (FSKEY_ESC == key)
-		{
-			break;
-		}
-
-		for (auto& e : enemy)
-		{
-			if (0 != e.state)
-			{
-				if (level == 1)
-				{
-					int move = rand() % 4;
-					if (move == 0)
-					{
-						e.x += e.vx;
-					}
-					if (move == 1)
-					{
-						e.x -= e.vx;
-					}
-					if (move == 2)
-					{
-						e.y += e.vy;
-					}
-					if (move == 3)
-					{
-						e.y -= e.vy;
-					}
-					if (e.x < 10 || 780 < e.x)
-					{
-						e.vx = -e.vx;
-					};
-					if (e.y < 0 || 600 < e.y)
-					{
-						e.vy = -e.vy;
-					};
-				}
-				if (level == 2)
-				{
-					e.Move_x();
-					if (e.x < 30 || 740 < e.x)
-					{
-						e.vx = -e.vx;
-					}
-				}
-				if (level == 3)
-				{
-					e.Move_x();
-					e.Move_y();
-					if (e.x < 30 || 740 < e.x)
-					{
-						e.vx = -e.vx;
-					};
-					if (e.y < 50 || 540 < e.y)
-					{
-						e.vy = -e.vy;
-					};
-				}
-				
-			}
-
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		for (auto e : enemy)
-		{
-			if (0 != e.state)
-			{
-				
-				if (level == 1)
-				{
-					e.Draw_level1();
-				}
-				if (level == 2)
-				{
-					e.Draw_level2();
-				}
-				if (level == 3)
-				{
-					e.Draw_level3();
-				}
-			}
-		}
-
-		FsSwapBuffers();
-		FsSleep(20);
-	}
-	return 0;
-}
