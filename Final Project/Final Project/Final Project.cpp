@@ -7,6 +7,7 @@
 
 #include "yssimplesound.h"
 
+
 class soundtrack
 {
 public:
