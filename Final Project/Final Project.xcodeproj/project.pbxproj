@@ -13,6 +13,10 @@
 		8375CC1C293678AF008F57A5 /* Final_ProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8375CC1B293678AF008F57A5 /* Final_ProjectUITests.m */; };
 		8375CC1E293678AF008F57A5 /* Final_ProjectUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8375CC1D293678AF008F57A5 /* Final_ProjectUITestsLaunchTests.m */; };
 		8375CC2C293678E3008F57A5 /* Final Project.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8375CC2A293678E3008F57A5 /* Final Project.cpp */; };
+		8375CC302936DD23008F57A5 /* fssimplewindowcpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8375CC2E2936DD22008F57A5 /* fssimplewindowcpp.cpp */; };
+		8375CC312936DD23008F57A5 /* fssimplewindowobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 8375CC2F2936DD23008F57A5 /* fssimplewindowobjc.m */; };
+		8375CC352936DD36008F57A5 /* yssimplesound_macosx_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = 8375CC332936DD36008F57A5 /* yssimplesound_macosx_objc.m */; };
+		8375CC362936DD36008F57A5 /* yssimplesound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8375CC342936DD36008F57A5 /* yssimplesound.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,12 @@
 		8375CC1D293678AF008F57A5 /* Final_ProjectUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Final_ProjectUITestsLaunchTests.m; sourceTree = "<group>"; };
 		8375CC2A293678E3008F57A5 /* Final Project.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Final Project.cpp"; sourceTree = "<group>"; };
 		8375CC2B293678E3008F57A5 /* Final Project.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "Final Project.hpp"; sourceTree = "<group>"; };
+		8375CC2D2936DD22008F57A5 /* fssimplewindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fssimplewindow.h; sourceTree = "<group>"; };
+		8375CC2E2936DD22008F57A5 /* fssimplewindowcpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fssimplewindowcpp.cpp; sourceTree = "<group>"; };
+		8375CC2F2936DD23008F57A5 /* fssimplewindowobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fssimplewindowobjc.m; sourceTree = "<group>"; };
+		8375CC322936DD36008F57A5 /* yssimplesound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yssimplesound.h; sourceTree = "<group>"; };
+		8375CC332936DD36008F57A5 /* yssimplesound_macosx_objc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yssimplesound_macosx_objc.m; sourceTree = "<group>"; };
+		8375CC342936DD36008F57A5 /* yssimplesound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = yssimplesound.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,12 @@
 		8375CBFD293678AE008F57A5 /* Final Project */ = {
 			isa = PBXGroup;
 			children = (
+				8375CC332936DD36008F57A5 /* yssimplesound_macosx_objc.m */,
+				8375CC342936DD36008F57A5 /* yssimplesound.cpp */,
+				8375CC322936DD36008F57A5 /* yssimplesound.h */,
+				8375CC2D2936DD22008F57A5 /* fssimplewindow.h */,
+				8375CC2E2936DD22008F57A5 /* fssimplewindowcpp.cpp */,
+				8375CC2F2936DD23008F57A5 /* fssimplewindowobjc.m */,
 				8375CC01293678AF008F57A5 /* Assets.xcassets */,
 				8375CC03293678AF008F57A5 /* MainMenu.xib */,
 				8375CC08293678AF008F57A5 /* Final_Project.entitlements */,
@@ -249,7 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8375CC352936DD36008F57A5 /* yssimplesound_macosx_objc.m in Sources */,
+				8375CC312936DD23008F57A5 /* fssimplewindowobjc.m in Sources */,
+				8375CC302936DD23008F57A5 /* fssimplewindowcpp.cpp in Sources */,
 				8375CC2C293678E3008F57A5 /* Final Project.cpp in Sources */,
+				8375CC362936DD36008F57A5 /* yssimplesound.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
