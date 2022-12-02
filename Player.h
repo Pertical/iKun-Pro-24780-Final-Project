@@ -12,7 +12,8 @@ public:
 	double radx = 10.0, rady = 0.75;
 
 	void drawPlayer(double x, double y);
-	void Healthbar(int hx, int hy, int fill);
+	void Healthbar(int hx, int hy, int health);
+	void DrawHealthbar(int hx, int hy, int health);
 	bool CheckCollision(int mx, int my, int tx, int ty, int tw, int th);
 	void drawBounds(void);
 	void Move(int key,int& x, int& y);
