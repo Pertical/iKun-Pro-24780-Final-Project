@@ -134,11 +134,11 @@ void Player::DrawHealthbar(int hx, int hy, int health) {
 bool Player::CheckCollision(double mx, double my, double tx, double ty, double tw, double th)
 {
 	//if ((mx + 20) >= tx && (mx + 20) <= tx + tw)
-	if((tx+tw) <= mx+20 && (tx-tw)>= mx)
+	if((tx+tw) <= mx+10 && (tx+tw) >= mx)
 	{
 		//if ((my-20) >= ty - th && (my-20)<= (ty-th)) {
 		//if ((my) >= ty - th && my <= (ty)) {
-		if((ty+th)>=my+20 && (ty+th)<=my){
+		if((ty+th) >= my && (ty-th) <= my+50){
 			return true;
 		}
 	}
@@ -176,17 +176,19 @@ void Player::Move(int key, double& x, double& y) {
 		y -= 10;
 	}
 
-	if (x + 50 > 400) {
-		x = 350;
-	}
-	else if (x < 0) {
+
+	if (x < 0) {
 		x = 0;
 	}
-	if (y > 600) {
-		y = 600;
+	if (y > 550) {
+		y = 550;
 	}
-	else if (y - 50 < 300) {
-		y = 350;
+	if (y < 0) {
+		y = 0;
 	}
+	if (x > 770) {
+		x = 770;
+	}
+
 }
 

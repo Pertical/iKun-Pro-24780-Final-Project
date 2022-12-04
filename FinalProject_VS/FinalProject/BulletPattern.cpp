@@ -131,6 +131,13 @@ void BulletPattern::Update(int patternType) {
 				}
 			}
 		}
+		else
+		{
+			for (int a = 0; a < n; a++) {
+				bullet[i][a].x = centerX;
+				bullet[i][a].y = centerY;
+			}
+		}
 		if (outOfBounds) {
 			fired[i] = false; //not fired, stop updating from now on
 			for (int a = 0; a < n; a++) {

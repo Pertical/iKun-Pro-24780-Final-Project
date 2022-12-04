@@ -1,0 +1,349 @@
+﻿  Bullet.cpp
+  BulletPattern.cpp
+  enemy.cpp
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(48,29): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(48,18): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(49,29): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(49,18): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(50,29): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(50,18): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(51,29): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(51,18): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(55,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(55,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(56,33): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(56,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(57,33): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(57,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(58,33): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(58,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(59,33): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(59,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(60,33): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(60,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(61,33): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(61,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(65,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(65,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(66,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(66,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(67,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(67,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(68,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(68,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(69,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(69,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(70,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(70,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(71,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(71,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(75,29): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(75,18): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(76,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(76,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(80,29): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(80,18): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(81,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(81,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(108,24): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(108,13): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(109,24): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(109,13): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(113,25): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(113,18): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(114,25): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(114,18): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(118,31): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(118,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(119,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(119,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(120,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(120,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(121,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(121,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(122,25): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(122,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(123,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(123,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(124,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(124,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(125,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(125,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(126,31): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(126,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(130,31): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(130,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(131,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(131,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(132,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(132,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(133,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(133,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(134,25): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(134,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(135,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(135,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(136,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(136,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(137,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(137,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(138,31): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(138,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(171,12): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(172,12): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(192,20): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(193,20): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(197,16): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(198,16): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(202,27): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(202,16): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(203,24): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(203,16): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(204,24): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(204,16): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(205,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(205,16): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(206,23): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(206,16): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(207,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(207,16): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(208,24): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(208,16): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(209,24): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(209,16): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(210,27): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(210,16): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(214,27): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(214,16): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(215,24): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(215,16): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(216,24): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(216,16): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(217,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(217,16): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(218,23): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(218,16): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(219,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(219,16): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(220,24): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(220,16): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(221,24): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(221,16): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(222,27): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(222,16): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(250,29): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(250,18): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(278,28): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(278,18): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(285,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(285,13): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(286,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(286,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(287,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(287,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(289,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(289,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(290,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(290,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(291,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(291,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(293,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(293,13): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(294,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(294,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(295,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(295,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(297,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(297,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(298,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(298,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(299,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(299,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(304,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(304,13): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(305,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(305,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(306,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(306,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(308,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(308,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(309,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(309,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(310,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(310,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(312,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(312,13): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(313,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(313,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(314,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(314,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(316,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(316,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(317,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(317,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(318,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(318,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(324,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(324,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(325,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(325,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(333,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(333,13): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(334,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(334,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(335,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(335,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(336,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(336,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(338,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(338,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(339,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(339,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(342,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(342,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(343,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(343,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(344,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(344,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(346,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(346,13): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(347,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(347,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(348,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(348,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(350,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(350,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(351,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(351,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(353,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(353,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(354,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(354,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(355,29): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(355,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(356,28): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\enemy.cpp(356,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  FinalProject.cpp
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\FinalProject.cpp(53,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\FinalProject.cpp(115,25): warning C4244: 'initializing': conversion from 'double' to 'time_t', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\FinalProject.cpp(58,14): warning C4101: 'gm': unreferenced local variable
+  fssimplewindow.cpp
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\fssimplewindow.cpp(946,72): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+  Player.cpp
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(17,27): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(17,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(18,37): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(18,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(19,37): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(19,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(20,32): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(20,13): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(21,32): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(21,13): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(26,23): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(26,13): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(27,27): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(27,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(28,32): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(28,13): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(29,28): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(29,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(30,37): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(30,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(36,36): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(36,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(37,37): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(37,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(38,37): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(38,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(39,36): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(39,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(45,32): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(45,13): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(46,37): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(46,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(47,37): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(47,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(48,32): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(48,13): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(52,36): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(52,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(53,36): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(53,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(54,36): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(54,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(55,36): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(55,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(57,36): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(57,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(58,36): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(58,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(59,36): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(59,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(60,36): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(60,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(66,36): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(66,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(67,32): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(67,13): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(68,32): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(68,13): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(69,36): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(69,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(71,37): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(71,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(72,37): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(72,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(73,37): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(73,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(74,37): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(74,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(79,32): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(79,13): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(80,37): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(80,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(81,37): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(81,22): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(82,32): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\Player.cpp(82,13): warning C4244: 'argument': conversion from 'double' to 'GLint', possible loss of data
+  StartMenu.cpp
+  yspng.cpp
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yspng.cpp(992,11): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  yssimplesound.cpp
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(410,25): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(425,5): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(579,22): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(616,18): warning C4018: '<': signed/unsigned mismatch
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(642,17): warning C4018: '<': signed/unsigned mismatch
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(666,18): warning C4018: '<': signed/unsigned mismatch
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(680,18): warning C4018: '<': signed/unsigned mismatch
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(724,58): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(731,49): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(732,51): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(741,51): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(742,49): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(743,51): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(744,51): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(777,22): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(799,47): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(799,71): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(805,23): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(825,18): warning C4018: '<': signed/unsigned mismatch
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(832,18): warning C4018: '<': signed/unsigned mismatch
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(857,18): warning C4018: '<': signed/unsigned mismatch
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(864,18): warning C4018: '<': signed/unsigned mismatch
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(898,54): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(904,23): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(1083,14): warning C4244: '=': conversion from '__int64' to 'unsigned int', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(1183,16): warning C4018: '<': signed/unsigned mismatch
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(1453,42): warning C4311: 'type cast': pointer truncation from 'HWND' to 'int'
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(1453,42): warning C4302: 'type cast': truncation from 'HWND' to 'int'
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(1699,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(1703,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(2429,22): warning C4244: '=': conversion from 'uint64_t' to 'DWORD', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(2737,49): warning C4244: '=': conversion from 'uint64_t' to 'DWORD', possible loss of data
+C:\Users\haoch\Desktop\24780-Final-Project\FinalProject_VS\FinalProject\yssimplesound.cpp(2765,51): warning C4244: 'argument': conversion from 'int64_t' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=DWORD
+          ]

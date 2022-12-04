@@ -6,7 +6,7 @@ class Enemy
 {
 public:
 	int state, vx, vy;
-	double x, y;
+	double en_x, en_y;
 	void Initialize_level1(void);
 	void Initialize_level2(void);
 	void Initialize_level3(void);

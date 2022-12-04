@@ -10,34 +10,34 @@
 
 void Enemy::Initialize_level1(void)
 {
-	state = 1;
-	x = 700.0;
-	y = 100.0;
+	state = 0;
+	en_x = 700.0;
+	en_y = 100.0;
 	vx = 1;
 	vy = 1;
 }
 void Enemy::Initialize_level2(void)
 {
-	state = 1;
-	x = 700;
-	y = 100;
+	//state = 1;
+	en_x = 700;
+	en_y = 100;
 	vx = 10;
 }
 void Enemy::Initialize_level3(void)
 {
-	state = 1;
-	x = 700;
-	y = 100;
+	//state = 1;
+	en_x = 700;
+	en_y = 100;
 	vx = 20;
 	vy = 20;
 }
 void Enemy::Move_x(void)
 {
-	x += vx;
+	en_x += vx;
 }
 void Enemy::Move_y(void)
 {
-	y += vy;
+	en_y += vy;
 }
 
 void Enemy::Draw_level1(void)
@@ -45,40 +45,40 @@ void Enemy::Draw_level1(void)
 	glColor3ub(0, 0, 0);
 
 	glBegin(GL_POLYGON);
-	glVertex2i(x - 10, y - 10);
-	glVertex2i(x - 10, y - 7);
-	glVertex2i(x + 10, y - 10);
-	glVertex2i(x + 10, y - 7);
+	glVertex2i(en_x - 10, en_y - 10);
+	glVertex2i(en_x - 10, en_y - 7);
+	glVertex2i(en_x + 10, en_y - 10);
+	glVertex2i(en_x + 10, en_y - 7);
 	glEnd();
 
 	glBegin(GL_POLYGON);
-	glVertex2f(x - 10, y + 7);
-	glVertex2f(x - 10 - 2, y + 6);
-	glVertex2f(x - 10 - 4, y + 7);
-	glVertex2f(x - 10 - 5, y + 9);
-	glVertex2f(x - 10 - 4, y + 11);
-	glVertex2f(x - 10 - 2, y + 12);
-	glVertex2f(x - 10 + 1, y + 10);
+	glVertex2f(en_x - 10, en_y + 7);
+	glVertex2f(en_x - 10 - 2, en_y + 6);
+	glVertex2f(en_x - 10 - 4, en_y + 7);
+	glVertex2f(en_x - 10 - 5, en_y + 9);
+	glVertex2f(en_x - 10 - 4, en_y + 11);
+	glVertex2f(en_x - 10 - 2, en_y + 12);
+	glVertex2f(en_x - 10 + 1, en_y + 10);
 	glEnd();
 
 	glBegin(GL_POLYGON);
-	glVertex2f(x + 8, y + 7);
-	glVertex2f(x + 6, y + 6);
-	glVertex2f(x + 4, y + 7);
-	glVertex2f(x + 3, y + 9);
-	glVertex2f(x + 4, y + 11);
-	glVertex2f(x + 6, y + 12);
-	glVertex2f(x + 9, y + 10);
+	glVertex2f(en_x + 8, en_y + 7);
+	glVertex2f(en_x + 6, en_y + 6);
+	glVertex2f(en_x + 4, en_y + 7);
+	glVertex2f(en_x + 3, en_y + 9);
+	glVertex2f(en_x + 4, en_y + 11);
+	glVertex2f(en_x + 6, en_y + 12);
+	glVertex2f(en_x + 9, en_y + 10);
 	glEnd();
 
 	glBegin(GL_LINE_STRIP);
-	glVertex2i(x - 10, y - 7);
-	glVertex2f(x - 10, y + 7);
+	glVertex2i(en_x - 10, en_y - 7);
+	glVertex2f(en_x - 10, en_y + 7);
 	glEnd();
 
 	glBegin(GL_LINE_STRIP);
-	glVertex2i(x + 10, y - 10);
-	glVertex2f(x + 9, y + 10);
+	glVertex2i(en_x + 10, en_y - 10);
+	glVertex2f(en_x + 9, en_y + 10);
 	glEnd();
 }
 
@@ -91,7 +91,7 @@ void Enemy::Draw_level2(void)
 	for (int i = 0; i < 360; i += 30)
 	{
 		double angle = (double)i * PI / 180;
-		glVertex2d((x)+cos(angle) * rad, (y)+sin(angle) * rad);
+		glVertex2d((en_x)+cos(angle) * rad, (en_y)+sin(angle) * rad);
 	}
 	glEnd();
 
@@ -100,42 +100,42 @@ void Enemy::Draw_level2(void)
 	for (int i = 0; i < 360; i += 30)
 	{
 		double angle = (double)i * PI / 180;
-		glVertex2d((x)+cos(angle) * rad, (y)+sin(angle) * rad);
+		glVertex2d((en_x)+cos(angle) * rad, (en_y)+sin(angle) * rad);
 	}
 	glEnd();
 
 	glBegin(GL_LINES);
-	glVertex2i(x, y - rad);
-	glVertex2i(x, y + rad);
+	glVertex2i(en_x, en_y - rad);
+	glVertex2i(en_x, en_y + rad);
 	glEnd();
 
 	glBegin(GL_LINES);
-	glVertex2i(x - rad, y);
-	glVertex2i(x + rad, y);
+	glVertex2i(en_x - rad, en_y);
+	glVertex2i(en_x + rad, en_y);
 	glEnd();
 
 	glBegin(GL_LINE_STRIP);
-	glVertex2f(x - 7.07, y - 7.07);
-	glVertex2f(x - 6, y - 6);
-	glVertex2f(x - 5, y - 5);
-	glVertex2f(x - 4, y - 3.5);
-	glVertex2f(x - 3.5, y);
-	glVertex2f(x - 4, y + 3.5);
-	glVertex2f(x - 5, y + 5);
-	glVertex2f(x - 6, y + 6);
-	glVertex2f(x - 7.07, y + 7.07);
+	glVertex2f(en_x - 7.07, en_y - 7.07);
+	glVertex2f(en_x - 6, en_y - 6);
+	glVertex2f(en_x - 5, en_y - 5);
+	glVertex2f(en_x - 4, en_y - 3.5);
+	glVertex2f(en_x - 3.5, en_y);
+	glVertex2f(en_x - 4, en_y + 3.5);
+	glVertex2f(en_x - 5, en_y + 5);
+	glVertex2f(en_x - 6, en_y + 6);
+	glVertex2f(en_x - 7.07, en_y + 7.07);
 	glEnd();
 
 	glBegin(GL_LINE_STRIP);
-	glVertex2f(x + 7.07, y - 7.07);
-	glVertex2f(x + 6, y - 6);
-	glVertex2f(x + 5, y - 5);
-	glVertex2f(x + 4, y - 3.5);
-	glVertex2f(x + 3.5, y);
-	glVertex2f(x + 4, y + 3.5);
-	glVertex2f(x + 5, y + 5);
-	glVertex2f(x + 6, y + 6);
-	glVertex2f(x + 7.07, y + 7.07);
+	glVertex2f(en_x + 7.07, en_y - 7.07);
+	glVertex2f(en_x + 6, en_y - 6);
+	glVertex2f(en_x + 5, en_y - 5);
+	glVertex2f(en_x + 4, en_y - 3.5);
+	glVertex2f(en_x + 3.5, en_y);
+	glVertex2f(en_x + 4, en_y + 3.5);
+	glVertex2f(en_x + 5, en_y + 5);
+	glVertex2f(en_x + 6, en_y + 6);
+	glVertex2f(en_x + 7.07, en_y + 7.07);
 	glEnd();
 }
 
@@ -150,7 +150,7 @@ void Enemy::Draw_level3(void)
 	{
 		double a = (double)i * PI * 2.0 / 64.0;
 		double s = sin(a);  double c = cos(a);
-		glVertex2d(x + c * 23, y + s * 23);
+		glVertex2d(en_x + c * 23, en_y + s * 23);
 	}
 	glEnd();
 
@@ -160,7 +160,7 @@ void Enemy::Draw_level3(void)
 	{
 		double a = (double)i * PI * 2.0 / 64.0;
 		double s = sin(a);  double c = cos(a);
-		glVertex2d(x + c * 20, y + s * 20);
+		glVertex2d(en_x + c * 20, en_y + s * 20);
 	}
 	glEnd();
 	//face
@@ -168,8 +168,8 @@ void Enemy::Draw_level3(void)
 	//basketball
 	double rad = 12;
 	int xb, yb;
-	xb = x - 20;
-	yb = y + 10;
+	xb = en_x - 20;
+	yb = en_y + 10;
 	glColor3ub(181, 66, 19);
 	glBegin(GL_POLYGON);
 	for (int i = 0; i < 360; i += 30)
@@ -230,7 +230,7 @@ void Enemy::Draw_level3(void)
 	{
 		double a = (double)i * PI * 2.0 / 64.0;
 		double s = sin(a);  double c = cos(a);
-		glVertex2d(x + 8 + c * 8, y - 5 + s * 8);
+		glVertex2d(en_x + 8 + c * 8, en_y - 5 + s * 8);
 	}
 	glEnd();
 
@@ -240,14 +240,14 @@ void Enemy::Draw_level3(void)
 	{
 		double a = (double)i * PI * 2.0 / 64.0;
 		double s = sin(a);  double c = cos(a);
-		glVertex2d(x + 8 + c * 5, y - 5 + s * 5);
+		glVertex2d(en_x + 8 + c * 5, en_y - 5 + s * 5);
 	}
 	glEnd();
 
 	glColor3ub(50, 50, 50);
 	glPointSize(4.0);
 	glBegin(GL_POINTS);
-	glVertex2i(x + 10, y - 5);
+	glVertex2i(en_x + 10, en_y - 5);
 	glEnd();
 	//left eye
 
@@ -258,7 +258,7 @@ void Enemy::Draw_level3(void)
 	{
 		double a = (double)i * PI * 2.0 / 64.0;
 		double s = sin(a);  double c = cos(a);
-		glVertex2d(x - 8 + c * 8, y - 5 + s * 8);
+		glVertex2d(en_x - 8 + c * 8, en_y - 5 + s * 8);
 	}
 	glEnd();
 
@@ -268,61 +268,61 @@ void Enemy::Draw_level3(void)
 	{
 		double a = (double)i * PI * 2.0 / 64.0;
 		double s = sin(a);  double c = cos(a);
-		glVertex2d(x - 8 + c * 5, y - 5 + s * 5);
+		glVertex2d(en_x - 8 + c * 5, en_y - 5 + s * 5);
 	}
 	glEnd();
 
 	glColor3ub(50, 50, 50);
 	glPointSize(4.0);
 	glBegin(GL_POINTS);
-	glVertex2i(x - 6, y - 5);
+	glVertex2i(en_x - 6, en_y - 5);
 	glEnd();
 	//right eye
 
 	//mouth
 	glColor3ub(255, 165, 0);
 	glBegin(GL_POLYGON);
-	glVertex2f(x, y);
-	glVertex2f(x - 4, y + 2);
-	glVertex2f(x - 8, y + 6);
+	glVertex2f(en_x, en_y);
+	glVertex2f(en_x - 4, en_y + 2);
+	glVertex2f(en_x - 8, en_y + 6);
 
-	glVertex2f(x - 10, y + 7.5);
-	glVertex2f(x - 8, y + 9);
-	glVertex2f(x - 4, y + 13);
+	glVertex2f(en_x - 10, en_y + 7.5);
+	glVertex2f(en_x - 8, en_y + 9);
+	glVertex2f(en_x - 4, en_y + 13);
 
-	glVertex2f(x, y + 15);
-	glVertex2f(x + 4, y + 13);
-	glVertex2f(x + 8, y + 9);
+	glVertex2f(en_x, en_y + 15);
+	glVertex2f(en_x + 4, en_y + 13);
+	glVertex2f(en_x + 8, en_y + 9);
 
-	glVertex2f(x + 10, y + 7.5);
-	glVertex2f(x + 8, y + 6);
-	glVertex2f(x + 4, y + 2);
+	glVertex2f(en_x + 10, en_y + 7.5);
+	glVertex2f(en_x + 8, en_y + 6);
+	glVertex2f(en_x + 4, en_y + 2);
 	glEnd();
 
 	glColor3ub(50, 50, 50);
 	glBegin(GL_LINE_STRIP);
-	glVertex2f(x, y);
-	glVertex2f(x - 4, y + 2);
-	glVertex2f(x - 8, y + 6);
+	glVertex2f(en_x, en_y);
+	glVertex2f(en_x - 4, en_y + 2);
+	glVertex2f(en_x - 8, en_y + 6);
 
-	glVertex2f(x - 10, y + 7.5);
-	glVertex2f(x - 8, y + 9);
-	glVertex2f(x - 4, y + 13);
+	glVertex2f(en_x - 10, en_y + 7.5);
+	glVertex2f(en_x - 8, en_y + 9);
+	glVertex2f(en_x - 4, en_y + 13);
 
-	glVertex2f(x, y + 15);
-	glVertex2f(x + 4, y + 13);
-	glVertex2f(x + 8, y + 9);
+	glVertex2f(en_x, en_y + 15);
+	glVertex2f(en_x + 4, en_y + 13);
+	glVertex2f(en_x + 8, en_y + 9);
 
-	glVertex2f(x + 10, y + 7.5);
-	glVertex2f(x + 8, y + 6);
-	glVertex2f(x + 4, y + 2);
+	glVertex2f(en_x + 10, en_y + 7.5);
+	glVertex2f(en_x + 8, en_y + 6);
+	glVertex2f(en_x + 4, en_y + 2);
 	glEnd();
 
 
 	glColor3ub(50, 50, 50);
 	glBegin(GL_LINE_STRIP);
-	glVertex2f(x - 10, y + 7.5);
-	glVertex2f(x + 10, y + 7.5);
+	glVertex2f(en_x - 10, en_y + 7.5);
+	glVertex2f(en_x + 10, en_y + 7.5);
 	glEnd();
 	//mouth
 
@@ -330,30 +330,30 @@ void Enemy::Draw_level3(void)
 	//hair
 	glColor3ub(128, 128, 128);
 	glBegin(GL_POLYGON);
-	glVertex2f(x, y - 30);
-	glVertex2f(x - 5, y - 28);
-	glVertex2f(x - 15, y - 24);
-	glVertex2f(x - 20, y - 20);
+	glVertex2f(en_x, en_y - 30);
+	glVertex2f(en_x - 5, en_y - 28);
+	glVertex2f(en_x - 15, en_y - 24);
+	glVertex2f(en_x - 20, en_y - 20);
 
-	glVertex2f(x - 25, y - 15);
-	glVertex2f(x - 20, y - 5);
+	glVertex2f(en_x - 25, en_y - 15);
+	glVertex2f(en_x - 20, en_y - 5);
 
 
-	glVertex2f(x - 15, y - 10);
-	glVertex2f(x - 10, y - 12);
-	glVertex2f(x - 5, y - 14);
+	glVertex2f(en_x - 15, en_y - 10);
+	glVertex2f(en_x - 10, en_y - 12);
+	glVertex2f(en_x - 5, en_y - 14);
 
-	glVertex2f(x, y - 20);
-	glVertex2f(x + 5, y - 14);
-	glVertex2f(x + 10, y - 12);
+	glVertex2f(en_x, en_y - 20);
+	glVertex2f(en_x + 5, en_y - 14);
+	glVertex2f(en_x + 10, en_y - 12);
 
-	glVertex2f(x + 15, y - 10);
-	glVertex2f(x + 20, y - 5);
+	glVertex2f(en_x + 15, en_y - 10);
+	glVertex2f(en_x + 20, en_y - 5);
 
-	glVertex2f(x + 25, y - 15);
-	glVertex2f(x + 20, y - 20);
-	glVertex2f(x + 15, y - 24);
-	glVertex2f(x + 5, y - 28);
+	glVertex2f(en_x + 25, en_y - 15);
+	glVertex2f(en_x + 20, en_y - 20);
+	glVertex2f(en_x + 15, en_y - 24);
+	glVertex2f(en_x + 5, en_y - 28);
 
 	glEnd();
 	//hair

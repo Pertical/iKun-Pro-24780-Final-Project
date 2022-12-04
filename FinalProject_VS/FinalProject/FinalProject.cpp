@@ -13,7 +13,7 @@
 #include "BulletPattern.h"
 #include "enemy.h"
 #include "Player.h"
-//#include "StartMenu.h"
+#include "StartMenu.h"
 
 
 
@@ -48,212 +48,197 @@ soundtrack::soundtrack()
 
 int main(void)
 {
-    time_t start = time(0);
-
-
-
-    
-    //std::cout << timeGone;
-
-    YsRawPngDecoder png;
-
-
     srand(time(NULL));
-    time_t startTime = time(NULL);
     int windowX = 800;
     int windowY = 600;
     FsOpenWindow(0, 0, windowX, windowY, 1);
+    
+    YsRawPngDecoder png1;
+    YsRawPngDecoder png2;
+    YsRawPngDecoder png3;
+
+    png1.Decode("Background/level1.png");
+    png1.Flip();
+
+    png2.Decode("Background/level2.png");
+    png2.Flip();
+
+    png3.Decode("Background/level3.png");
+    png3.Flip();
+
+
+    time_t start = time(0);
+    time_t startTime = time(NULL);
+    
+    int health = 3;
+    int state =0;
+
 
     Enemy ey;
     Player pl;
+    GameMenu gm;
+
     ey.Initialize_level1();
 
-
-    double x = 100, y = 450;
-    int health = 3;
-    double targetxi= 0, targetyi = 0, targetsizex = 3.5, targetsizey = 3.5;
-    ey.x = 700;
-    ey.y = 100;
-
-    //int x = 200, y = 200;
-
-    /*for (auto& ey : enemy)
-    {
-        if (timeGone <= 60)
-        {
-            ey.Initialize_level1();
-        }
-        if (timeGone > 60 && timeGone < 120)
-        {
-            ey.Initialize_level2();
-        }
-        if (timeGone > 120)
-        {
-            ey.Initialize_level3();
-        }
-
-    }*/
-
-    int n = 30;
-
-    BulletPattern bp(ey.x, ey.y, windowX, windowY);
-
-
+    double x = 100, y = 450; //player location
+    ey.en_x = 700;
+    ey.en_y = 100;
+    
+    double targetxi= 0, targetyi = 0, targetsizex = 3.5, targetsizey = 3.5; //bullet coll info 
+    int n = 25; //bullet num 
+    
+    BulletPattern bp(ey.en_x, ey.en_y, windowX, windowY);
     bp.Initialize(n, 5.0, 3.0, 1, 0, startTime);
 
-    png.Decode("Background/level1.png");
-    png.Flip();
-
-    if (0 == png.wid || 0 == png.hei)
-    {
-        printf("Failed to load image.\n");
-        return 1;
-    }
     int patternNum = bp.ReturnPatternNum();
 
     int k = 0;
 
     for (;;)
     {
+     
+        int w, h;
+        FsGetWindowSize(w, h);
+        
         auto ms = FsPassedTime();
         double dt = (double)ms / 1000.0;
-
-        time_t timeGone = difftime(time(0)+55, start);
+        time_t timeGone = difftime(time(0), start);
         std::cout << timeGone;
+        
+        if (health <= 0)
+        {
+            state = 4;
+        }
+
+
         glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
-
         FsPollDevice();
-        auto key = FsInkey();
+        glRasterPos2i(0, h - 1);
+        
 
+        auto key = FsInkey();
         if (FSKEY_ESC == key)
         {
             break;
         }
-
-
-        bp.centerX = ey.x;
-        bp.centerY = ey.y;
-
-        int w, h;
-
-        FsGetWindowSize(w, h);
-
-        glRasterPos2i(0, h - 1);
-
-        glDrawPixels(png.wid, png.hei, GL_RGBA, GL_UNSIGNED_BYTE, png.rgba);
-
-        bp.DrawPattern(2);//Pattern 0 = wave, 1= spiral, 2=combined
-
-        /*ey.Draw_level1();
-        ey.Draw_level2();
-        ey.Draw_level3();*/
-
-
-        if (0 != ey.state)
+        
+        if (state == 0)
         {
-            // printf(timeGone);
-            if (timeGone <= 60)
-            {
+            gm.Draw();
+        }
 
-                int move = rand() % 4;
-                if (move == 0)
-                {
-                    ey.x += ey.vx;
-                }
-                if (move == 1)
-                {
-                    ey.x -= ey.vx;
-                }
-                if (move == 2)
-                {
-                    ey.y += ey.vy;
-                }
-                if (move == 3)
-                {
-                    ey.y -= ey.vy;
-                }
-                if (ey.x < 30 || 740 < ey.x)
-                {
-                    ey.vx = -ey.vx;
-                };
-                if (ey.y < 50 || 540 < ey.y)
-                {
-                    ey.vy = -ey.vy;
-                };
-                ey.Draw_level1();
+        if (FSKEY_1 == key)
+        {
+            state = 1;
+            time_t timeGone = difftime(time(0), start);
+            
+        }
+        if (FSKEY_2 == key)
+        {
+            state = 2;
+            time_t timeGone = difftime(time(0) +60, start);
+            
+        }
+        if (FSKEY_3 == key)
+        {
+            state = 3;
+            time_t timeGone = difftime(time(0) +120, start);
+            
+        }
 
-            }
-            if (timeGone > 60 && timeGone < 120)
-            {
-                ey.Initialize_level2();
-                ey.Move_x();
-                //ey.x += ey.vx;
 
-                /*int move = rand() % 4;
-                if (move == 0)
-                {
-                    ey.x += ey.vx;
-                }
-                if (move == 1)
-                {
-                    ey.x -= ey.vx;
-                }
-                if (move == 2)
-                {
-                    ey.y += ey.vy;
-                }
-                if (move == 3)
-                {
-                    ey.y -= ey.vy;
-                }
-                if (ey.x < 30 || 740 < ey.x)
-                {
-                    ey.vx = -ey.vx;
-                };
-                if (ey.y < 50 || 540 < ey.y)
-                {
-                    ey.vy = -ey.vy;
-                };
-
-                if (ey.x < 30 || 740 < ey.x)
-                {
-                    ey.vx = -ey.vx;
-                }*/
-
-                ey.Draw_level2();
-            }
-            if (timeGone > 120)
-            {
-                ey.Initialize_level3();
-                //ey.Move_x();
-                //ey.Move_y();
-                ey.x += ey.vx;
-                ey.y += ey.vy;
-                if (ey.x < 30 || 740 < ey.x)
-                {
-                    ey.vx = -ey.vx;
-                };
-                if (ey.y < 50 || 540 < ey.y)
-                {
-                    ey.vy = -ey.vy;
-                };
-                ey.Draw_level3();
-            }
-
+        if (timeGone >= 60)
+        {
+            state = 2;
+        }
+        if (timeGone >= 120)
+        {
+            state = 3;
+        }
+        if (timeGone >= 180)
+        {
+            state = 4;
         }
 
             
+        if (state == 1)
+        {
+            glDrawPixels(png1.wid, png1.hei, GL_RGBA, GL_UNSIGNED_BYTE, png1.rgba);
+            
+            int move = rand() % 4;
+            if (move == 0)
+            {
+                ey.en_x += ey.vx;
+            }
+            if (move == 1)
+            {
+                ey.en_x -= ey.vx;
+            }
+            if (move == 2)
+            {
+                ey.en_y += ey.vy;
+            }
+            if (move == 3)
+            {
+                ey.en_y -= ey.vy;
+            }
+            if (ey.en_x < 30 || 740 < ey.en_x)
+            {
+                ey.vx = -ey.vx;
+            };
+            if (ey.en_y < 50 || 540 < ey.en_y)
+            {
+                ey.vy = -ey.vy;
+            };
+            ey.Draw_level1();
+            bp.DrawPattern(0);
+        }
+
+        if (state ==2)
+        {
+            glDrawPixels(png2.wid, png2.hei, GL_RGBA, GL_UNSIGNED_BYTE, png2.rgba);
+            ey.en_x = ey.en_x + ey.vx;
+
+            if (ey.en_x <= 30 || 740 <= ey.en_x)
+            {
+                ey.vx = -ey.vx;
+            }
+            ey.Draw_level2();
+            bp.DrawPattern(1);//Pattern 0 = wave, 1= spiral, 2=combined
+        }
+        if (state == 3)
+        {
+            glDrawPixels(png3.wid, png3.hei, GL_RGBA, GL_UNSIGNED_BYTE, png3.rgba);
+            ey.en_x = ey.en_x + ey.vx;
+            ey.en_y = ey.en_y + ey.vy;
+     
+            if (ey.en_x < 30 || 740 < ey.en_x)
+            {
+                ey.vx = -ey.vx;
+            };
+            if (ey.en_y < 50 || 540 < ey.en_y)
+            {
+                ey.vy = -ey.vy;
+            };
+            ey.Draw_level3();
+            bp.DrawPattern(2);//Pattern 0 = wave, 1= spiral, 2=combined
+        }
+        if (state ==4)
+        {
+            break; 
+        }
         
         pl.Move(key, x, y);
         pl.drawPlayer(x, y);
         pl.DrawHealthbar(50, 50, health);
 
+
         for (int i = 0; i < patternNum; i++)
         {
             for (int j = 0; j < n; j++)
             {
-                bp.bullet[i][j].centerX = ey.x;
-                bp.bullet[i][j].centerY = ey.y;
+                bp.centerX = ey.en_x;
+                bp.centerY = ey.en_y;
                 targetxi = bp.bullet[i][j].x;
                 targetyi = bp.bullet[i][j].y;
                 //printf("targetx: %f", bp.bullet[i][j].y);
@@ -263,7 +248,7 @@ int main(void)
                     printf("hit");
                 }
 
-                if (k > 0) {
+                if (k == 10) {
                     health = health - 1;
                     k = 0;
                 }
@@ -271,14 +256,7 @@ int main(void)
             }
         }
 
-
-
-        /*pl.Healthbar(50, 50, 1);
-        pl.Healthbar(80, 50, 1);
-        pl.Healthbar(110, 50, 1);*/
-
-        //Add test cases here
-
+        glFlush();
         FsSwapBuffers();
         FsSleep(10);
 

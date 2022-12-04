@@ -17,14 +17,14 @@ public:
 	int dstate;
 
 	Bullet();
-	Bullet(double cx, double cy, double radius, double velocity, double ang, int dType);
-	void Initialize(double cx, double cy, double radius, double velocity, double ang, int dType);
+	Bullet(double &cx, double &cy, double radius, double velocity, double ang, int dType);
+	void Initialize(double &cx, double &cy, double radius, double velocity, double ang, int dType);
 	void Move(void);
 	void Move1(void);
 	void DrawBullet(int dType);
 	void Update(void);
 	void Update1(void);
-	void DrawCircle(int cx, int cy, int rad, int fill);
+	void DrawCircle(double cx, double cy, double rad, int fill);
 };
 
 #endif

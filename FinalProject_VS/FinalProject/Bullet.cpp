@@ -8,7 +8,7 @@
 Bullet::Bullet() {
 	//blank default constructor
 }
-Bullet::Bullet(double cx, double cy, double radius, double velocity, double ang, int dType) { //defaults
+Bullet::Bullet(double &cx, double &cy, double radius, double velocity, double ang, int dType) { //defaults
 	centerX = cx;
 	centerY = cy;
 	x = centerX;
@@ -19,7 +19,7 @@ Bullet::Bullet(double cx, double cy, double radius, double velocity, double ang,
 	drawType = dType; //type of bullet to draw
 }
 //TODO: Add cleanup function/destructor to delete bullets once screen borders are hit. Might need to add variables for screen border.
-void Bullet::Initialize(double cx, double cy, double radius, double velocity, double ang, int dType) { //defaults
+void Bullet::Initialize(double &cx, double &cy, double radius, double velocity, double ang, int dType) { //defaults
 	centerX = cx;
 	centerY = cy;
 	x = centerX;
@@ -39,7 +39,7 @@ void Bullet::Move(void) {
 }
 
 void Bullet::Move1(void) {
-	angle += 0.2;
+	angle += 0.3;
 	radians = angle * (Pi / 180.0);
 
 	vx = v * (double)cos((double)radians);
@@ -69,19 +69,23 @@ void Bullet::DrawBullet(int dType) {
 }
 void Bullet::Update(void) {
 	Move();
+	glColor3ub(150, 70, 132);
 	DrawBullet(drawType);
+	
 }
 
 void Bullet::Update1(void) {
 	Move1();
+	glColor3ub(255, 111, 123);
 	DrawBullet(drawType);
+	
 }
 
 //Temp functions to remove
-void Bullet::DrawCircle(int cx, int cy, int rad, int fill)
+void Bullet::DrawCircle(double cx, double cy, double rad, int fill)
 {
 	const double YS_PI = 3.1415927;
-	glColor3f(1, 0, 1);
+	
 	if (0 != fill) //fill
 	{
 		glBegin(GL_POLYGON);

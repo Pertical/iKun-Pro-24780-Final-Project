@@ -44,6 +44,7 @@ int GameMenu::RunOneStep(void)
 
 void GameMenu::Draw(void)
 {
+	FsPollDevice();
 	
 
 	glColor3f(0, 0, 0);
@@ -56,3 +57,5 @@ void GameMenu::Draw(void)
 
 
 }
+
+
