@@ -1,7 +1,1 @@
-﻿  FinalProject.cpp
-C:\Users\FeiyaZhu\Desktop\24780-Final-Project\Final Project VS Version\FinalProject\FinalProject.cpp(32,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\FeiyaZhu\Desktop\24780-Final-Project\Final Project VS Version\FinalProject\FinalProject.cpp(101,25): warning C4244: 'initializing': conversion from 'double' to 'time_t', possible loss of data
-C:\Users\FeiyaZhu\Desktop\24780-Final-Project\Final Project VS Version\FinalProject\FinalProject.cpp(124,33): warning C4244: 'initializing': conversion from 'double' to 'time_t', possible loss of data
-C:\Users\FeiyaZhu\Desktop\24780-Final-Project\Final Project VS Version\FinalProject\FinalProject.cpp(131,33): warning C4244: 'initializing': conversion from 'double' to 'time_t', possible loss of data
-C:\Users\FeiyaZhu\Desktop\24780-Final-Project\Final Project VS Version\FinalProject\FinalProject.cpp(138,33): warning C4244: 'initializing': conversion from 'double' to 'time_t', possible loss of data
-  FinalProject.vcxproj -> C:\Users\FeiyaZhu\Desktop\24780-Final-Project\Final Project VS Version\FinalProject\x64\Debug\FinalProject.exe
+﻿  FinalProject.vcxproj -> C:\Users\FeiyaZhu\Desktop\24780-Final-Project\Final Project VS Version\FinalProject\x64\Debug\FinalProject.exe

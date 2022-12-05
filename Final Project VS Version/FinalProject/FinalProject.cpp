@@ -152,12 +152,11 @@ int main(void)
         }
         if (timeGone >= 180)
         {
-            state = 4;
+            gm.Draw();
+            gm.DrawWin();
+            player.End();
         }
 
-        
-
-        
         if (state == 1)
         {
             glDrawPixels(png1.wid, png1.hei, GL_RGBA, GL_UNSIGNED_BYTE, png1.rgba);
@@ -233,13 +232,6 @@ int main(void)
             pl.DrawHealthbar(50, 50, health);
 
         }
-        if (state == 4)
-        {
-            gm.Draw();
-            gm.DrawWin();
-            player.End();
-        }
-
 
         for (int i = 0; i < patternNum; i++)
         {
@@ -264,13 +256,17 @@ int main(void)
             }
         }
 
+        if (FSKEY_G == key)
+        {
+            health = 99;
+            printf("GOD mode on!");
+        }
+
         if (health <= 0)
         {
             gm.Draw();
             gm.DrawDead();
             player.End();
-
-    
         }
         
         glFlush();
@@ -278,6 +274,5 @@ int main(void)
         FsSleep(10);
 
     }
-    player.End();
     return 0;
 }
