@@ -107,7 +107,7 @@ int main(void)
         
         if (health <= 0)
         {
-            state = 4;
+            state = 5;
         }
 
 
@@ -159,6 +159,7 @@ int main(void)
         {
             state = 4;
         }
+       
 
             
         if (state == 1)
@@ -223,9 +224,13 @@ int main(void)
             ey.Draw_level3();
             bp.DrawPattern(2);//Pattern 0 = wave, 1= spiral, 2=combined
         }
-        if (state ==4)
+        if (state == 4)
         {
-            break; 
+            gm.DrawWin();
+        }
+        if (state == 5)
+        {
+            gm.DrawDead();
         }
         
         pl.Move(key, x, y);

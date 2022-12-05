@@ -10,6 +10,8 @@ public:
 	int Run(void);
 	int RunOneStep(void);
 	void Draw(void);
+	void DrawDead(void);
+	void DrawWin(void);
 };
 
 /* } */
