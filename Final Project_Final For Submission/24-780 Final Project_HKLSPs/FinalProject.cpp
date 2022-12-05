@@ -89,6 +89,7 @@ int main(void)
     int patternNum = bp.ReturnPatternNum();
 
     int k = 0;
+    bool levelSelect = false;
 
     for (;;)
     {
@@ -121,65 +122,56 @@ int main(void)
             if (FSKEY_1 == key)
             {
                 state = 1;
-                time_t timeGone = difftime(time(0), start);
+                //time_t timeGone = difftime(time(0), start);
+                start = time(0) - 0;
                 player.PlayOneShot(background);
-
+                levelSelect = true;
             }
             if (FSKEY_2 == key)
             {
                 state = 2;
-                time_t timeGone = difftime(time(0) + 60, start);
+                //time_t timeGone = difftime(time(0) + 60, start);
+                //timeGone = 120;
+                start = time(0) - 60;
                 player.PlayOneShot(background);
-
+                levelSelect = true;
             }
             if (FSKEY_3 == key)
             {
                 state = 3;
-                time_t timeGone = difftime(time(0) + 120, start);
+                //time_t timeGone = difftime(time(0) + 120, start);
+                //timeGone = 180;
+                start = time(0) - 120;
                 player.PlayOneShot(background);
+                levelSelect = true;
             }
 
         }
 
 
-        if (timeGone >= 60)
+        //if (timeGone >= 60 && levelSelect)
+        if (timeGone >= 60 && timeGone < 120 && levelSelect)
         {
             state = 2;
         }
-        if (timeGone >= 120)
+        else if (timeGone >= 120 && timeGone < 180 && levelSelect)
         {
             state = 3;
         }
-        if (timeGone >= 180)
+        else if (timeGone >= 180 && levelSelect)
         {
             state = 4;
+            // gm.Draw();
+            // gm.DrawWin();
+            // player.End();
         }
 
-        for (int i = 0; i < patternNum; i++)
-        {
-            for (int j = 0; j < n; j++)
-            {
-                bp.centerX = ey.en_x;
-                bp.centerY = ey.en_y;
-                targetxi = bp.bullet[i][j].x;
-                targetyi = bp.bullet[i][j].y;
-                //printf("targetx: %f", bp.bullet[i][j].y);
-
-                if (true == pl.CheckCollision(x, y, targetxi, targetyi, targetsizex, targetsizey)) { // TO BE FIXED
-                    k++;
-                    printf("hit");
-                }
-
-                if (k == 10) {
-                    health = health - 1;
-                    k = 0;
-                }
-
-            }
+        if(state == 4){
+            gm.Draw();
+            gm.DrawWin();
+            player.End(); 
         }
-
-        
-        if (state == 1)
+        else if (state == 1)
         {
             glDrawPixels(png1.wid, png1.hei, GL_RGBA, GL_UNSIGNED_BYTE, png1.rgba);
             
@@ -215,8 +207,7 @@ int main(void)
             pl.DrawHealthbar(50, 50, health);
 
         }
-
-        if (state ==2)
+        else if (state ==2)
         {
             glDrawPixels(png2.wid, png2.hei, GL_RGBA, GL_UNSIGNED_BYTE, png2.rgba);
             ey.en_x = ey.en_x + ey.vx;
@@ -232,7 +223,7 @@ int main(void)
             pl.DrawHealthbar(50, 50, health);
 
         }
-        if (state == 3)
+        else if (state == 3)
         {
 
             glDrawPixels(png3.wid, png3.hei, GL_RGBA, GL_UNSIGNED_BYTE, png3.rgba);
@@ -254,25 +245,42 @@ int main(void)
             pl.DrawHealthbar(50, 50, health);
 
         }
-        if (state == 4)
+
+        for (int i = 0; i < patternNum; i++)
         {
-            gm.Draw();
-            gm.DrawWin();
-            player.End();
+            for (int j = 0; j < n; j++)
+            {
+                bp.centerX = ey.en_x;
+                bp.centerY = ey.en_y;
+                targetxi = bp.bullet[i][j].x;
+                targetyi = bp.bullet[i][j].y;
+                //printf("targetx: %f", bp.bullet[i][j].y);
+
+                if (true == pl.CheckCollision(x, y, targetxi, targetyi, targetsizex, targetsizey)) { // TO BE FIXED
+                    k++;
+                    printf("hit");
+                }
+
+                if (k == 10) {
+                    health = health - 1;
+                    k = 0;
+                }
+
+            }
+        }
+
+        if (FSKEY_G == key)
+        {
+            health = 99999;
+            printf("\nGOD mode on!\n");
         }
 
         if (health <= 0)
         {
             state = 5;
-        }
-
-        if (state == 5 || health <= 0)
-        {
             gm.Draw();
             gm.DrawDead();
             player.End();
-
-    
         }
         
         glFlush();
@@ -280,6 +288,5 @@ int main(void)
         FsSleep(10);
 
     }
-    player.End();
     return 0;
 }

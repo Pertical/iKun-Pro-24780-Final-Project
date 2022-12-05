@@ -100,7 +100,7 @@ void GameMenu::DrawDead(void)
 	YsGlDrawFontBitmap32x48("You Lost");
 	glRasterPos2i(285, 310);
 	YsGlDrawFontBitmap12x16("You are not a iKun");
-	glRasterPos2i(330, 430);
+	glRasterPos2i(310, 430);
 	YsGlDrawFontBitmap10x14("Quit: Press ESC");
 
 }
@@ -111,10 +111,10 @@ void GameMenu::DrawWin(void)
 {
 	glColor3f(211, 211, 211);
 	glRasterPos2i(270, 280);
-	YsGlDrawFontBitmap32x48("You Win");
+	YsGlDrawFontBitmap32x48("You Won");
 	glRasterPos2i(255, 310);
 	YsGlDrawFontBitmap12x16("You are INDEED a iKun");
-	glRasterPos2i(330, 430);
+	glRasterPos2i(310, 430);
 	YsGlDrawFontBitmap10x14("Quit: Press ESC");
 
 }
