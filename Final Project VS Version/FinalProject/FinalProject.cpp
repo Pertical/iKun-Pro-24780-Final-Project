@@ -141,7 +141,7 @@ int main(void)
                 state = 3;
                 //time_t timeGone = difftime(time(0) + 120, start);
                 //timeGone = 180;
-                start = time(0) - 120;
+                start = time(0) - 10;
                 player.PlayOneShot(background);
                 levelSelect = true;
             }
@@ -149,22 +149,29 @@ int main(void)
         }
 
 
-        if (timeGone >= 60 && levelSelect)
+        //if (timeGone >= 60 && levelSelect)
+        if (timeGone >= 60 && timeGone < 120 && levelSelect)
         {
             state = 2;
         }
-        if (timeGone >= 120 && levelSelect)
+        else if (timeGone >= 120 && timeGone < 180 && levelSelect)
         {
             state = 3;
         }
-        if (timeGone >= 180 && levelSelect)
+        else if (timeGone >= 180 && levelSelect)
         {
-            gm.Draw();
-            gm.DrawWin();
-            player.End();
+            state = 4;
+            // gm.Draw();
+            // gm.DrawWin();
+            // player.End();
         }
 
-        if (state == 1)
+        if(state == 4){
+            gm.Draw();
+            gm.DrawWin();
+            player.End(); 
+        }
+        else if (state == 1)
         {
             glDrawPixels(png1.wid, png1.hei, GL_RGBA, GL_UNSIGNED_BYTE, png1.rgba);
             
@@ -200,8 +207,7 @@ int main(void)
             pl.DrawHealthbar(50, 50, health);
 
         }
-
-        if (state ==2)
+        else if (state ==2)
         {
             glDrawPixels(png2.wid, png2.hei, GL_RGBA, GL_UNSIGNED_BYTE, png2.rgba);
             ey.en_x = ey.en_x + ey.vx;
@@ -217,7 +223,7 @@ int main(void)
             pl.DrawHealthbar(50, 50, health);
 
         }
-        if (state == 3)
+        else if (state == 3)
         {
 
             glDrawPixels(png3.wid, png3.hei, GL_RGBA, GL_UNSIGNED_BYTE, png3.rgba);
