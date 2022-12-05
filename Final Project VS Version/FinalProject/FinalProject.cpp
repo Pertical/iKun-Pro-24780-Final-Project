@@ -141,7 +141,7 @@ int main(void)
                 state = 3;
                 //time_t timeGone = difftime(time(0) + 120, start);
                 //timeGone = 180;
-                start = time(0) - 10;
+                start = time(0) - 120;
                 player.PlayOneShot(background);
                 levelSelect = true;
             }
@@ -271,12 +271,13 @@ int main(void)
 
         if (FSKEY_G == key)
         {
-            health = 99;
-            printf("GOD mode on!");
+            health = 99999;
+            printf("\nGOD mode on!\n");
         }
 
         if (health <= 0)
         {
+            state = 5;
             gm.Draw();
             gm.DrawDead();
             player.End();
