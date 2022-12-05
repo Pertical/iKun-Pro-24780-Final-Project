@@ -89,6 +89,7 @@ int main(void)
     int patternNum = bp.ReturnPatternNum();
 
     int k = 0;
+    bool levelSelect = false;
 
     for (;;)
     {
@@ -121,36 +122,42 @@ int main(void)
             if (FSKEY_1 == key)
             {
                 state = 1;
-                time_t timeGone = difftime(time(0), start);
+                //time_t timeGone = difftime(time(0), start);
+                start = time(0) - 0;
                 player.PlayOneShot(background);
-
+                levelSelect = true;
             }
             if (FSKEY_2 == key)
             {
                 state = 2;
-                time_t timeGone = difftime(time(0) + 60, start);
+                //time_t timeGone = difftime(time(0) + 60, start);
+                //timeGone = 120;
+                start = time(0) - 60;
                 player.PlayOneShot(background);
-
+                levelSelect = true;
             }
             if (FSKEY_3 == key)
             {
                 state = 3;
-                time_t timeGone = difftime(time(0) + 120, start);
+                //time_t timeGone = difftime(time(0) + 120, start);
+                //timeGone = 180;
+                start = time(0) - 120;
                 player.PlayOneShot(background);
+                levelSelect = true;
             }
 
         }
 
 
-        if (timeGone >= 60)
+        if (timeGone >= 60 && levelSelect)
         {
             state = 2;
         }
-        if (timeGone >= 120)
+        if (timeGone >= 120 && levelSelect)
         {
             state = 3;
         }
-        if (timeGone >= 180)
+        if (timeGone >= 180 && levelSelect)
         {
             gm.Draw();
             gm.DrawWin();
