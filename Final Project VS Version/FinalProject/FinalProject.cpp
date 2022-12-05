@@ -155,28 +155,7 @@ int main(void)
             state = 4;
         }
 
-        for (int i = 0; i < patternNum; i++)
-        {
-            for (int j = 0; j < n; j++)
-            {
-                bp.centerX = ey.en_x;
-                bp.centerY = ey.en_y;
-                targetxi = bp.bullet[i][j].x;
-                targetyi = bp.bullet[i][j].y;
-                //printf("targetx: %f", bp.bullet[i][j].y);
-
-                if (true == pl.CheckCollision(x, y, targetxi, targetyi, targetsizex, targetsizey)) { // TO BE FIXED
-                    k++;
-                    printf("hit");
-                }
-
-                if (k == 10) {
-                    health = health - 1;
-                    k = 0;
-                }
-
-            }
-        }
+        
 
         
         if (state == 1)
@@ -261,12 +240,31 @@ int main(void)
             player.End();
         }
 
-        if (health <= 0)
+
+        for (int i = 0; i < patternNum; i++)
         {
-            state = 5;
+            for (int j = 0; j < n; j++)
+            {
+                bp.centerX = ey.en_x;
+                bp.centerY = ey.en_y;
+                targetxi = bp.bullet[i][j].x;
+                targetyi = bp.bullet[i][j].y;
+                //printf("targetx: %f", bp.bullet[i][j].y);
+
+                if (true == pl.CheckCollision(x, y, targetxi, targetyi, targetsizex, targetsizey)) { // TO BE FIXED
+                    k++;
+                    printf("hit");
+                }
+
+                if (k == 10) {
+                    health = health - 1;
+                    k = 0;
+                }
+
+            }
         }
 
-        if (state == 5 || health <= 0)
+        if (health <= 0)
         {
             gm.Draw();
             gm.DrawDead();
