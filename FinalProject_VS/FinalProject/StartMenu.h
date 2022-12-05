@@ -10,6 +10,7 @@ public:
 	int Run(void);
 	int RunOneStep(void);
 	void Draw(void);
+	void DrawTextOne(void);
 	void DrawDead(void);
 	void DrawWin(void);
 };

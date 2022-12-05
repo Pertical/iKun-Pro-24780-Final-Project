@@ -27,28 +27,24 @@
 #include <chrono>
 
 
-class soundtrack
-{
-public:
-    YsSoundPlayer player;
-    YsSoundPlayer::SoundData background;
-    soundtrack();
-};
-
-soundtrack::soundtrack()
-{
-    player.MakeCurrent();
-    player.Start();
-    if (YSOK != background.LoadWav("S"))
-    {
-        printf("Error!  Cannot load !\n");
-    }
-}
-
-
 int main(void)
 {
     srand(time(NULL));
+
+    YsSoundPlayer player;
+    YsSoundPlayer::SoundData background;
+    char fName[256];
+
+
+
+    if (YSOK != background.LoadWav("Music/background.wav"))
+    {
+        printf("Failed to read %s\n", fName);
+        return 1;
+    }
+
+
+    player.Start();
     int windowX = 800;
     int windowY = 600;
     FsOpenWindow(0, 0, windowX, windowY, 1);
@@ -104,11 +100,6 @@ int main(void)
         double dt = (double)ms / 1000.0;
         time_t timeGone = difftime(time(0), start);
         std::cout << timeGone;
-        
-        if (health <= 0)
-        {
-            state = 5;
-        }
 
 
         glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
@@ -125,25 +116,29 @@ int main(void)
         if (state == 0)
         {
             gm.Draw();
-        }
+            gm.DrawTextOne();
 
-        if (FSKEY_1 == key)
-        {
-            state = 1;
-            time_t timeGone = difftime(time(0), start);
-            
-        }
-        if (FSKEY_2 == key)
-        {
-            state = 2;
-            time_t timeGone = difftime(time(0) +60, start);
-            
-        }
-        if (FSKEY_3 == key)
-        {
-            state = 3;
-            time_t timeGone = difftime(time(0) +120, start);
-            
+            if (FSKEY_1 == key)
+            {
+                state = 1;
+                time_t timeGone = difftime(time(0), start);
+                player.PlayOneShot(background);
+
+            }
+            if (FSKEY_2 == key)
+            {
+                state = 2;
+                time_t timeGone = difftime(time(0) + 60, start);
+                player.PlayOneShot(background);
+
+            }
+            if (FSKEY_3 == key)
+            {
+                state = 3;
+                time_t timeGone = difftime(time(0) + 120, start);
+                player.PlayOneShot(background);
+            }
+
         }
 
 
@@ -159,9 +154,31 @@ int main(void)
         {
             state = 4;
         }
-       
 
-            
+        for (int i = 0; i < patternNum; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                bp.centerX = ey.en_x;
+                bp.centerY = ey.en_y;
+                targetxi = bp.bullet[i][j].x;
+                targetyi = bp.bullet[i][j].y;
+                //printf("targetx: %f", bp.bullet[i][j].y);
+
+                if (true == pl.CheckCollision(x, y, targetxi, targetyi, targetsizex, targetsizey)) { // TO BE FIXED
+                    k++;
+                    printf("hit");
+                }
+
+                if (k == 10) {
+                    health = health - 1;
+                    k = 0;
+                }
+
+            }
+        }
+
+        
         if (state == 1)
         {
             glDrawPixels(png1.wid, png1.hei, GL_RGBA, GL_UNSIGNED_BYTE, png1.rgba);
@@ -193,6 +210,10 @@ int main(void)
             };
             ey.Draw_level1();
             bp.DrawPattern(0);
+            pl.Move(key, x, y);
+            pl.drawPlayer(x, y);
+            pl.DrawHealthbar(50, 50, health);
+
         }
 
         if (state ==2)
@@ -206,9 +227,14 @@ int main(void)
             }
             ey.Draw_level2();
             bp.DrawPattern(1);//Pattern 0 = wave, 1= spiral, 2=combined
+            pl.Move(key, x, y);
+            pl.drawPlayer(x, y);
+            pl.DrawHealthbar(50, 50, health);
+
         }
         if (state == 3)
         {
+
             glDrawPixels(png3.wid, png3.hei, GL_RGBA, GL_UNSIGNED_BYTE, png3.rgba);
             ey.en_x = ey.en_x + ey.vx;
             ey.en_y = ey.en_y + ey.vy;
@@ -223,48 +249,37 @@ int main(void)
             };
             ey.Draw_level3();
             bp.DrawPattern(2);//Pattern 0 = wave, 1= spiral, 2=combined
+            pl.Move(key, x, y);
+            pl.drawPlayer(x, y);
+            pl.DrawHealthbar(50, 50, health);
+
         }
         if (state == 4)
         {
+            gm.Draw();
             gm.DrawWin();
+            player.End();
         }
-        if (state == 5)
+
+        if (health <= 0)
         {
+            state = 5;
+        }
+
+        if (state == 5 || health <= 0)
+        {
+            gm.Draw();
             gm.DrawDead();
+            player.End();
+
+    
         }
         
-        pl.Move(key, x, y);
-        pl.drawPlayer(x, y);
-        pl.DrawHealthbar(50, 50, health);
-
-
-        for (int i = 0; i < patternNum; i++)
-        {
-            for (int j = 0; j < n; j++)
-            {
-                bp.centerX = ey.en_x;
-                bp.centerY = ey.en_y;
-                targetxi = bp.bullet[i][j].x;
-                targetyi = bp.bullet[i][j].y;
-                //printf("targetx: %f", bp.bullet[i][j].y);
-
-                if (true == pl.CheckCollision(x, y, targetxi, targetyi, targetsizex, targetsizey)) { // TO BE FIXED
-                    k++;
-                    printf("hit");
-                }
-
-                if (k == 10) {
-                    health = health - 1;
-                    k = 0;
-                }
-
-            }
-        }
-
         glFlush();
         FsSwapBuffers();
         FsSleep(10);
 
     }
+    player.End();
     return 0;
 }

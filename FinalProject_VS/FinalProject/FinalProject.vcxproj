@@ -154,6 +154,9 @@
     <Image Include="Background\level2.png" />
     <Image Include="Background\level3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Media Include="Music\background.wav" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
